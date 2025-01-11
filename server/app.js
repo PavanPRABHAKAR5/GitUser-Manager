@@ -4,6 +4,10 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/users');
 
+require('dotenv').config();
+
+const PORT = process.env.PORT || 4000
+
 const app = express();
 connectDB();
 
@@ -15,7 +19,7 @@ app.use('/api/v1/users', userRoutes);
 
 
 
-app.listen(3000, (err)=>{
+app.listen(PORT, (err)=>{
     if(err){
         console.log(err)
     }else{
