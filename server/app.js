@@ -11,7 +11,11 @@ const PORT = process.env.PORT || 4000
 const app = express();
 connectDB();
 
-app.use(cors());
+app.use(cors({
+    origin :['https://deoly.mern-lwhq.vercel.app'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
