@@ -33,6 +33,5 @@ This project involves building a backend application that interacts with the Git
 - The design for the repository list and follower pages is flexible and can be kept simple.
 ### Deployment
 
-The application has been deployed and can be accessed using the following link:
 
-[Click here to access the deployed website](https://chic-crisp-a1b83c.netlify.app/)
+
